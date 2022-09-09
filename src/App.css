@@ -9,6 +9,8 @@
   text-transform: uppercase;
 }
 
+/* NAVIGATION */
+
 #Nav-div {
   height: 64px;
   border-bottom: 2px solid black;
@@ -18,10 +20,6 @@
   align-items: center;
   justify-content: space-between;
 }
-/* 
-#Nav-Buttons-div {
-  display: flex;
-} */
 
 nav {
   display: flex;
@@ -57,7 +55,6 @@ nav {
   top: -5px;
   left: 5px;
   border: 2px solid black;
-  /* transition: 0s; */
 }
 
 #Nav-Buttons-div button:active {
@@ -66,7 +63,74 @@ nav {
   border: 2px solid black;
   font-size: 25px;
   box-shadow: -0px 0px black;
-  /* transition: 0s; */
   top: 0px;
   left: 0px;
+  transition: 0s;
+}
+
+/* HOME PAGE */
+/* 
+#Home-div {
+  background-color: rgb(37, 46, 53);
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+} */
+
+#InnerHome-div {
+  display: flex;
+  /* transform: rotate(3deg); */
+  transform: skew(-15deg, 3deg);
+  overflow: scroll;
+  /* overflow-x: hidden; */
+  /* scrollbar-width: none; */
+  width: 200%;
+  height: 200%;
+  /* top: -10; */
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  padding-right: 100px;
+  box-sizing: content-box;
+  background-color: rgb(37, 46, 53);
+  z-index: -1;
+}
+
+#InnerHome-div::-webkit-scrollbar {
+  display: none;
+}
+#InnerHome-div {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.ImageDiv {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  margin: 10px;
+  background-color: rgb(40, 156, 226);
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: left 1.5s, top 1.5s, box-shadow 1.5s;
+}
+
+.ImageDiv:hover {
+  box-shadow: 30px 30px black;
+  top: -30px;
+  left: -30px;
+  border: 2px solid black;
+}
+
+.vertical-div {
+  display: flex;
+  flex-direction: column;
+  /* overflow: scroll; */
+  /* overflow-x: hidden; */
+  /* height: 1000px; */
 }

@@ -1,5 +1,6 @@
 html {
   font-family: "DINCondensed-Bold";
+  overflow: hidden;
 }
 
 body {

@@ -130,3 +130,39 @@ nav {
   /* overflow-x: hidden; */
   /* height: 1000px; */
 }
+
+/* TEST HOME */
+#TestHome {
+  height: 94.9vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(37, 46, 53);
+  overflow: clip;
+  overflow-y: hidden;
+}
+
+#InnerTestHomeDiv {
+  display: flex;
+  height: 100%;
+  transform: skew(-15deg, 3deg);
+  overflow: hidden;
+  overflow-y: scroll;
+  position: relative;
+  /* top: -130px; */
+}
+
+.VerticalImageDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(37, 46, 53);
+  min-height: 500%;
+}
+
+.ImageDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  width: 200px;
+  height: 200px;
+}

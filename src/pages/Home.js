@@ -25,7 +25,6 @@ const Home = () => {
   ];
 
   const imageDivs = imageLinks.map((image, index) => {
-    console.log(image);
     return <ImageDiv numberToShow={index} img={image} />;
   });
   // const imageDivs = images.map(({ name }, index) => {
@@ -40,6 +39,8 @@ const Home = () => {
 
   //   return <ImageDiv numberToShow={name} img={yeet} />;
   // });
+
+  console.log(imageDivs);
 
   const verticalImageDivs = [];
 

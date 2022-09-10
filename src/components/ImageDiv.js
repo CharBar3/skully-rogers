@@ -1,8 +1,9 @@
-const ImageDiv = ({ numberToShow, img }) => {
+const ImageDiv = ({ numberToShow, img, index }) => {
   return (
     <div className="ImageDiv">
-      <img src={img} style={{ width: "500px" }} />
+      <img src={img} style={{ width: "200px" }} />
       {/* <p>{numberToShow}</p> */}
+      {/* {index} */}
     </div>
   );
 };

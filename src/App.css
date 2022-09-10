@@ -77,41 +77,37 @@ nav {
   width: 100%;
 } */
 
-#InnerHome-div {
+#Home-div {
   display: flex;
-  /* transform: rotate(3deg); */
+  transform: rotate(3deg);
   transform: skew(-15deg, 3deg);
   overflow: scroll;
-  /* overflow-x: hidden; */
-  /* scrollbar-width: none; */
+  overflow-x: hidden;
+  scrollbar-width: none;
   width: 200%;
   height: 200%;
-  /* top: -10; */
   position: absolute;
-  left: -50%;
-  top: -50%;
+  left: -25%;
+  top: -60%;
   padding-right: 100px;
   box-sizing: content-box;
   background-color: rgb(37, 46, 53);
   z-index: -1;
 }
 
-#InnerHome-div::-webkit-scrollbar {
+#Home-div::-webkit-scrollbar {
   display: none;
 }
-#InnerHome-div {
+#Home-div {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
 
 .ImageDiv {
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height: 500px;
   border: 2px solid black;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: x-large;
   margin: 10px;
   background-color: rgb(40, 156, 226);
   position: relative;

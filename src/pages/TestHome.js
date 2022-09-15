@@ -18,7 +18,7 @@ const TestHome = () => {
   });
 
   let verticalImageDivs = [];
-  const numberOfVerticalDivs = 10;
+  const numberOfVerticalDivs = 15;
   let counter = 0;
   let fillerArray = [];
 
@@ -53,7 +53,7 @@ const TestHome = () => {
     //     marginTop += 115;
 
     if (index % 2 === 0) {
-      marginTop = 110;
+      marginTop = 200;
       verticalImageDivs.push(
         <div
           className="VerticalImageDiv"

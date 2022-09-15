@@ -66,6 +66,7 @@
 }
 #navbar-navigation-socials button:focus {
   transition: 0s;
+  border: 2px solid black;
 }
 
 /* Extra small devices (phones, 600px and down) */

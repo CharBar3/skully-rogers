@@ -1,7 +1,14 @@
 import "../styles/componentStyles/NavBar.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const NavBar = () => {
+  const [buttonBorders, setButtonBorders] = useState({
+    home: "2px solid black",
+    newArrivals: "",
+    about: "",
+  });
+
   return (
     <div id="navbar">
       <div id="navbar-logo">
@@ -20,13 +27,46 @@ const NavBar = () => {
       <div id="navbar-navigation-socials">
         <nav>
           <Link to="/">
-            <button>Home</button>
+            <button
+              style={{ border: buttonBorders.home }}
+              onClick={() =>
+                setButtonBorders({
+                  home: "2px solid black",
+                  newArrivals: "",
+                  about: "",
+                })
+              }
+            >
+              Home
+            </button>
           </Link>
           <Link to="/NewArrivals">
-            <button>New Arrivals</button>
+            <button
+              style={{ border: buttonBorders.newArrivals }}
+              onClick={() =>
+                setButtonBorders({
+                  home: "",
+                  newArrivals: "2px solid black",
+                  about: "",
+                })
+              }
+            >
+              New Arrivals
+            </button>
           </Link>
           <Link>
-            <button>About</button>
+            <button
+              style={{ border: buttonBorders.about }}
+              onClick={() =>
+                setButtonBorders({
+                  home: "",
+                  newArrivals: "",
+                  about: "2px solid black",
+                })
+              }
+            >
+              About
+            </button>
           </Link>
         </nav>
         <div>

@@ -1,34 +1,38 @@
-#nav-component-div {
+#navbar {
+  max-height: 100px;
   background-color: rgb(255, 241, 0);
   border-bottom: 2px solid black;
-
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#nav-component-logo-div {
+#navbar-logo {
+  max-height: 100px;
   display: flex;
   align-items: center;
 }
 
-#nav-component-logo-div img {
-  height: 96px;
+#navbar-logo img {
+  max-height: 100px;
 }
-#nav-component-logo-div a {
+#navbar-title {
   text-decoration: none;
   color: black;
+  font-size: 6.4rem;
+  padding-top: 1.6rem;
 }
 
-nav {
+#navbar-navigation-socials {
   display: flex;
-  width: 600px;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-around;
+}
+#navbar-navigation-socials img {
+  height: 32px;
 }
 
-#Nav-Buttons-div {
-  display: flex;
-}
-
-#Nav-Buttons-div button {
+#navbar-navigation-socials button {
   font-family: "DINCondensed-Bold";
   background: none;
   border: 2px solid rgba(0, 0, 0, 0);
@@ -47,26 +51,20 @@ nav {
   left: 0;
 }
 
-#Nav-Buttons-div button:hover {
-  font-family: "DINCondensed-Bold";
-  background: none;
-  /* font-size: 25px; */
+#navbar-navigation-socials button:hover {
   box-shadow: -5px 5px black;
   top: -5px;
   left: 5px;
   border: 2px solid black;
 }
 
-#Nav-Buttons-div button:active {
-  font-family: "DINCondensed-Bold";
-  background: none;
-  border: 2px solid black;
+#navbar-navigation-socials button:active {
   box-shadow: -0px 0px black;
   top: 0px;
   left: 0px;
   transition: 0s;
 }
-#Nav-Buttons-div button:focus {
+#navbar-navigation-socials button:focus {
   transition: 0s;
 }
 

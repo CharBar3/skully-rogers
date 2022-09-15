@@ -1,2 +1,49 @@
 .InfiniteScrollBox-Component-div {
+  /* size */
+
+  /* Flexbox */
+  display: flex;
+  /* flex-wrap: wrap; */
+
+  overflow-y: scroll;
+  height: 100%;
+
+  border: 2px solid white;
+
+  position: absolute;
+
+  transform: skew(-15deg, 3deg);
+}
+
+/* .InfiniteScrollBox-Component-div::-webkit-scrollbar {
+  display: none;
+}
+.InfiniteScrollBox-Component-div {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
+
+.vertical-div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* img {
+  margin: 25px;
+} */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

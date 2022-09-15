@@ -1,9 +1,10 @@
 import InfiniteScrollBox from "../components/InfiniteScrollBox";
+import "../styles/pageStyles/HomePage.css";
 
-const Home = () => {
+const Home = ({ images }) => {
   return (
-    <div id="Home-Page-div">
-      <InfiniteScrollBox />
+    <div id="HomePage-div">
+      <InfiniteScrollBox images={images} />
     </div>
   );
 };

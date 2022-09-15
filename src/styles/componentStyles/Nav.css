@@ -1,30 +1,31 @@
-@font-face {
-  font-family: "DINCondensed-Bold";
-  src: local("DINCondensed-Bold"), url("./fonts/DINCondensed-Bold.ttf"),
-    format("truetype");
-}
-
-.App {
-  font-family: "DINCondensed-Bold";
-  text-transform: uppercase;
-}
-
-/* NAVIGATION */
-
-#Nav-div {
-  height: 96px;
-  border-bottom: 2px solid black;
+#nav-component-div {
   background-color: rgb(255, 241, 0);
+  border-bottom: 2px solid black;
 
   display: flex;
+}
+
+#nav-component-logo-div {
+  display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+#nav-component-logo-div img {
+  height: 96px;
+}
+#nav-component-logo-div a {
+  text-decoration: none;
+  color: black;
 }
 
 nav {
   display: flex;
   width: 600px;
   justify-content: space-evenly;
+}
+
+#Nav-Buttons-div {
+  display: flex;
 }
 
 #Nav-Buttons-div button {
@@ -34,7 +35,6 @@ nav {
   font-size: 32px;
 
   position: relative;
-
   text-transform: uppercase;
 
   padding-top: 5px;
@@ -48,21 +48,22 @@ nav {
 }
 
 #Nav-Buttons-div button:hover {
+  font-family: "DINCondensed-Bold";
   background: none;
-  border: 2px solid black;
+  /* font-size: 25px; */
   box-shadow: -5px 5px black;
-
   top: -5px;
   left: 5px;
+  border: 2px solid black;
 }
 
 #Nav-Buttons-div button:active {
+  font-family: "DINCondensed-Bold";
   background: none;
   border: 2px solid black;
   box-shadow: -0px 0px black;
   top: 0px;
   left: 0px;
-
   transition: 0s;
 }
 #Nav-Buttons-div button:focus {

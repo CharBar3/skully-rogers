@@ -7,13 +7,16 @@
   align-items: center;
 }
 
-/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #newarrivals :nth-child(even) {
+    flex-direction: column-reverse;
+  }
+}
 @media only screen and (max-width: 900px) {
   #newarrivals {
     margin-top: 64px;
   }
 }
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 1400px) {
   #newarrivals {
     max-width: 100%;

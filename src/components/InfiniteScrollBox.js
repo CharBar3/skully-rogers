@@ -7,9 +7,20 @@ const InfiniteScrollBox = ({ images }) => {
 
   const numberOfVerticalDivs = 5;
   let verticalDivs = [];
+  let counter = 0;
+  let fillerArray = [];
 
   for (let index = 0; index < numberOfVerticalDivs; index++) {
-    verticalDivs.push(showImages);
+    if (index % 2 === 1) {
+      fillerArray = showImages.slice(-index + counter);
+      counter += 1;
+    }
+
+    const copyImages = showImages;
+    let thingToPush = fillerArray.concat(copyImages);
+    thingToPush = thingToPush.concat(copyImages);
+
+    verticalDivs.push(thingToPush);
   }
 
   const showVerticalDivs = verticalDivs.map((images) => {

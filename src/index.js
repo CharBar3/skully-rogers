@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import "./styles/fonts/DINCondensed-Bold.ttf";
 
 import { BrowserRouter } from "react-router-dom";
 

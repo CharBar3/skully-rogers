@@ -10,13 +10,19 @@
   border-bottom: 4px solid black;
 }
 
+#MobileNavBarMenu-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 #mobile-navbar-menu-links {
   display: flex;
   flex-direction: column;
   text-decoration: none;
   color: black;
   margin-top: 50px;
-  margin-left: 25px;
+  margin-right: 50px;
 }
 
 #mobile-navbar-menu-links a {
@@ -27,7 +33,7 @@
 #mobile-navbar-menu-socials {
   display: flex;
   margin-top: 50px;
-  margin-left: 25px;
+  margin-right: 50px;
 }
 #mobile-navbar-menu-socials img {
   width: 50px;

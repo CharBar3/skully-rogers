@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   #MobileNavBar {
     position: fixed;
     top: 0;
@@ -36,7 +36,7 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 901px) {
   #MobileNavBar {
     display: none;
   }

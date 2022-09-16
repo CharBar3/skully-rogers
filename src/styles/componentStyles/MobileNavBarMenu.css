@@ -1,0 +1,31 @@
+#MobileNavBarMenu {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 241, 0);
+  font-size: 3.2rem;
+  z-index: 100;
+}
+
+#mobile-navbar-menu-links {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  margin-top: 50px;
+  margin-left: 25px;
+}
+
+#mobile-navbar-menu-links a {
+  text-decoration: none;
+  color: black;
+}
+
+#mobile-navbar-menu-socials {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 25px;
+}
+#mobile-navbar-menu-socials img {
+  width: 50px;
+}

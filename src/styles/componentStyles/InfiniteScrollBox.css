@@ -1,20 +1,10 @@
 .InfiniteScrollBox-Component-div {
-  /* size */
-
-  /* Flexbox */
   display: flex;
-  /* flex-wrap: wrap; */
-
-  overflow-y: scroll;
-  /* height: 110%; */
-  /* width: 150%; */
-
-  /* border: 2px solid white; */
-  /* width: 1400px; */
+  overflow-x: scroll;
   position: fixed;
   top: -200px;
   right: -200px;
-  bottom: -400px;
+  bottom: -200px;
   left: -200px;
   transform: skew(-15deg, 3deg);
 }

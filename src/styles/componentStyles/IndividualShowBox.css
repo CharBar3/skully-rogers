@@ -1,6 +1,6 @@
 .IndividualShowBox {
   background-color: rgb(255, 241, 0);
-  margin: 40px;
+  margin-top: 40px;
   display: flex;
   font-size: 3.2rem;
   max-height: 400px;

@@ -6,14 +6,20 @@
 
   background-color: rgb(255, 241, 0);
   border-bottom: 2px solid black;
+
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar-inner {
+  width: 1400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
 }
 
 #navbar-logo {
-  max-height: 100px;
   display: flex;
   align-items: center;
 }
@@ -32,9 +38,23 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  width: 40%;
 }
+
+nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#socails-div {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
 #navbar-navigation-socials img {
-  height: 32px;
+  height: 42px;
 }
 
 #navbar-navigation-socials button {

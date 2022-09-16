@@ -6,12 +6,16 @@
   /* flex-wrap: wrap; */
 
   overflow-y: scroll;
-  height: 100%;
+  /* height: 110%; */
+  /* width: 150%; */
 
-  border: 2px solid white;
-
-  position: absolute;
-
+  /* border: 2px solid white; */
+  /* width: 1400px; */
+  position: fixed;
+  top: -200px;
+  right: -200px;
+  bottom: -400px;
+  left: -200px;
   transform: skew(-15deg, 3deg);
 }
 
@@ -23,14 +27,25 @@
   scrollbar-width: none;
 } */
 
+.vertical-div:nth-child(odd) {
+  margin-top: 210px;
+}
+
 .vertical-div {
   display: flex;
   flex-direction: column;
 }
 
-/* img {
-  margin: 25px;
-} */
+.vertical-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-div img {
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

@@ -1,8 +1,8 @@
-@font-face {
+/* @font-face {
   font-family: "DINCondensed-Bold";
   src: local("DINCondensed-Bold"), url("./styles/fonts/DINCondensed-Bold.ttf"),
     format("truetype");
-}
+} */
 
 .App {
   font-family: "DINCondensed-Bold";

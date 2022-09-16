@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "DINCondensed-Bold";
+  src: local("DINCondensed-Bold"), url("../public/fonts/DINCondensed-Bold.ttf"),
+    format("truetype");
+}
+
 html {
   font-family: "DINCondensed-Bold";
   font-size: 62.5%;

@@ -5,7 +5,7 @@ const InfiniteScrollBox = ({ images }) => {
     return <img src={src} alt={alt} />;
   });
 
-  const numberOfVerticalDivs = 7;
+  const numberOfVerticalDivs = 10;
   let verticalDivs = [];
   let counter = 0;
   let fillerArray = [];

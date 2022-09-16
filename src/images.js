@@ -44,7 +44,7 @@ const images = [
   {
     src: "https://i.imgur.com/XSdc7pN.png",
     alt: "Gibralter Apex Legends",
-    name: "Gibralter",
+    name: "Gibraltar",
     price: 555,
   },
   {

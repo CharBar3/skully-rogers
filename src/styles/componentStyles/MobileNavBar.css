@@ -1,0 +1,47 @@
+@media only screen and (max-width: 600px) {
+  #MobileNavBar {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    max-width: 600px;
+    background-color: rgb(255, 241, 0);
+    height: 64px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #mobile-navbar-logo {
+    display: flex;
+    font-size: 3.2rem;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+  }
+  #mobile-navbar-logo p {
+    padding-top: 8px;
+  }
+  #mobile-navbar-logo img {
+    height: 64px;
+  }
+
+  #mobile-navbar-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile-navbar-menu img {
+    height: 32px;
+    margin-right: 20px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #MobileNavBar {
+    display: none;
+  }
+  #mobile-navbar-logo img {
+    display: none;
+  }
+}

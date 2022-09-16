@@ -65,10 +65,6 @@
 
 /* Extra small devices (phones, 900px and down) */
 @media only screen and (max-width: 600px) {
-  .IndividualShowBox :nth-child(odd) {
-    flex-direction: column-reverse;
-  }
-
   .IndividualShowBox {
     display: flex;
     flex-direction: column;
@@ -78,8 +74,7 @@
 
   .IndividualShowBox-price-div {
     display: flex;
-    flex-direction: column;
-    /* max-height: 100%; */
+    flex-direction: column-reverse;
     max-width: 80%;
   }
 

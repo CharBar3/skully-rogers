@@ -1,10 +1,13 @@
 #MobileNavBarMenu {
   display: none;
+  position: fixed;
+  top: 64px;
   width: 100vw;
-  height: 100vh;
+  height: 50vh;
   background-color: rgb(255, 241, 0);
   font-size: 3.2rem;
   z-index: 100;
+  border-bottom: 4px solid black;
 }
 
 #mobile-navbar-menu-links {

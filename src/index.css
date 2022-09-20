@@ -4,6 +4,12 @@
     url(./fonts/DINCondensed-Bold.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "DINAlternate-Bold";
+  src: local("DINAlternate-Bold") url(./fonts/DINAlternate-Bold.otf)
+    format("onlytype");
+}
+
 html {
   font-family: "DINCondensed-Bold";
   font-size: 62.5%;

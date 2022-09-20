@@ -2,8 +2,8 @@
 @media only screen and (max-width: 600px) {
   .legend-show-box {
     background-color: rgb(255, 241, 0);
-
-    margin: 10px;
+    margin: 16px;
+    max-width: 500px;
   }
 
   .legend-show-box-img-div {
@@ -12,9 +12,147 @@
   .legend-show-box-img-div img {
     width: 100%;
   }
+
+  .legend-show-box-content-and-links-div {
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 375px;
+  }
+  .legend-show-box-content-and-links-div h2 {
+    text-transform: uppercase;
+    font-size: 42px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .legend-show-box-content-and-links-div p {
+    font-family: "DINAlternate-Bold";
+    font-size: 20px;
+  }
+
+  .legend-show-box-links-div {
+    display: flex;
+  }
+  .legends-show-box-links-etsy-div {
+    margin-right: 8px;
+  }
+  .legend-show-box-links-div h3 {
+    font-size: 28px;
+    margin-bottom: 0px;
+  }
+
+  .legend-show-box-links-div button {
+    font-family: "DINCondensed-Bold";
+    background: none;
+    border: 2px solid black;
+    font-size: 32px;
+
+    position: relative;
+    text-transform: uppercase;
+
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+
+    transition: top 0.5s, left 0.5s, box-shadow 0.5s, font-size 0.5s;
+    top: 0;
+    left: 0;
+  }
+  .legend-show-box-links-div button:hover {
+    box-shadow: -5px 5px black;
+    top: -5px;
+    left: 5px;
+  }
+  .legend-show-box-links-div button:active {
+    box-shadow: -0px 0px black;
+    top: 0px;
+    left: 0px;
+    transition: 0s;
+  }
+  .legend-show-box-links-div button:focus {
+    transition: 0s;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .legend-show-box {
+    background-color: rgb(255, 241, 0);
+    margin: 16px;
+    max-width: 500px;
+  }
+
+  .legend-show-box-img-div {
+    width: 100%;
+  }
+  .legend-show-box-img-div img {
+    width: 100%;
+  }
+
+  .legend-show-box-content-and-links-div {
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 375px;
+  }
+  .legend-show-box-content-and-links-div h2 {
+    text-transform: uppercase;
+    font-size: 42px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .legend-show-box-content-and-links-div p {
+    font-family: "DINAlternate-Bold";
+    font-size: 20px;
+  }
+
+  .legend-show-box-links-div {
+    display: flex;
+  }
+  .legends-show-box-links-etsy-div {
+    margin-right: 8px;
+  }
+  .legend-show-box-links-div h3 {
+    font-size: 28px;
+    margin-bottom: 0px;
+  }
+
+  .legend-show-box-links-div button {
+    font-family: "DINCondensed-Bold";
+    background: none;
+    border: 2px solid black;
+    font-size: 32px;
+
+    position: relative;
+    text-transform: uppercase;
+
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+
+    transition: top 0.5s, left 0.5s, box-shadow 0.5s, font-size 0.5s;
+    top: 0;
+    left: 0;
+  }
+  .legend-show-box-links-div button:hover {
+    box-shadow: -5px 5px black;
+    top: -5px;
+    left: 5px;
+  }
+  .legend-show-box-links-div button:active {
+    box-shadow: -0px 0px black;
+    top: 0px;
+    left: 0px;
+    transition: 0s;
+  }
+  .legend-show-box-links-div button:focus {
+    transition: 0s;
+  }
 }
 /* Medium devices (landscape tablets, 900px and up) */
 @media only screen and (min-width: 900px) {

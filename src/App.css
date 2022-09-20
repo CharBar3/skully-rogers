@@ -6,7 +6,7 @@
 
 .App {
   font-family: "DINCondensed-Bold";
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   width: 100vw;
   display: flex;
   flex-direction: column;

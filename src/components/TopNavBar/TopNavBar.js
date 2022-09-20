@@ -1,6 +1,6 @@
 import "./TopNavBar.css";
 import { Link } from "react-router-dom";
-const TopNavBar = () => {
+const TopNavBar = ({ openCloseMobileNavMenu, mobileNavMenuStatus }) => {
   return (
     <div id="top-nav-bar">
       <div id="top-nav-bar-inner-div">
@@ -23,6 +23,7 @@ const TopNavBar = () => {
           <img
             src="https://img.icons8.com/ios-filled/50/000000/menu--v1.png"
             alt="Menu Icon"
+            onClick={() => openCloseMobileNavMenu(mobileNavMenuStatus)}
           />
         </div>
         <div id="top-nav-bar-navigation-and-socials">
@@ -32,7 +33,7 @@ const TopNavBar = () => {
                 <span>Home</span>
               </button>
             </Link>
-            <Link to="/NewArrivals">
+            <Link to="/Legends">
               <button>
                 <span>Legends</span>
               </button>
@@ -44,10 +45,12 @@ const TopNavBar = () => {
             </Link>
           </nav>
           <div id="top-nav-bar-socials">
+            {/* <a href="https://www.instagram.com/liminsquare/"> */}
             <img
               src="https://img.icons8.com/ios/500/000000/instagram-new--v1.png"
               alt="Instagram Logo"
             />
+            {/* </a> */}
           </div>
         </div>
       </div>

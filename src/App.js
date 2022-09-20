@@ -9,24 +9,25 @@ import MobileNavBar from "./components/MobileNavBar";
 import MobileNavBarMenu from "./components/MobileNavBarMenu";
 import { useState } from "react";
 import TopNavBar from "./components/TopNavBar/TopNavBar";
+import Legends from "./pages/Legends/Legends";
 
 function App() {
-  const [menuStatus, setMenuStatus] = useState(false);
+  const [mobileNavMenuStatus, setMobileNavMenuStatus] = useState(false);
 
-  const openCloseMenu = (menuStatus) => {
+  const openCloseMobileNavMenu = (mobileNavMenuStatus) => {
     const navMenu = document.querySelector("#MobileNavBarMenu");
-    if (menuStatus === false) {
+    if (mobileNavMenuStatus === false) {
       navMenu.style.display = "block";
-      setMenuStatus(true);
+      setMobileNavMenuStatus(true);
     } else {
       navMenu.style.display = "none";
-      setMenuStatus(false);
+      setMobileNavMenuStatus(false);
     }
   };
   const [navButtonBorders, setNavButtonBorders] = useState({
     home: "2px solid black",
-    newArrivals: "",
-    about: "",
+    legends: "",
+    theArtist: "",
   });
   return (
     <div className="App">
@@ -38,13 +39,15 @@ function App() {
         openCloseMenu={openCloseMenu}
         menuStatus={menuStatus}
         setMenuStatus={setMenuStatus}
+      /> */}
+      <TopNavBar
+        openCloseMobileNavMenu={openCloseMobileNavMenu}
+        mobileNavMenuStatus={mobileNavMenuStatus}
       />
       <MobileNavBarMenu
-        openCloseMenu={openCloseMenu}
-        menuStatus={menuStatus}
-        setMenuStatus={setMenuStatus}
-      /> */}
-      <TopNavBar />
+        openCloseMobileNavMenu={openCloseMobileNavMenu}
+        mobileNavMenuStatus={mobileNavMenuStatus}
+      />
       <Routes>
         <Route
           path="/"
@@ -53,10 +56,9 @@ function App() {
           }
         />
         <Route
-          path="/NewArrivals"
+          path="/Legends"
           element={
-            <NewArrivals
-              navButtonBorders={navButtonBorders}
+            <Legends
               setNavButtonBorders={setNavButtonBorders}
               images={images}
             />

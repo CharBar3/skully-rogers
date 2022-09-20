@@ -1,4 +1,4 @@
-import "../styles/componentStyles/MobileNavBarMenu.css";
+import "./MobileNavBarMenu.css";
 import { Link } from "react-router-dom";
 
 const MobileNavBarMenu = ({ openCloseMenu, menuStatus }) => {

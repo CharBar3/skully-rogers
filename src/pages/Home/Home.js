@@ -1,5 +1,5 @@
-import InfiniteScrollBox from "../components/InfiniteScrollBox";
-import "../styles/pageStyles/HomePage.css";
+import InfiniteScrollBox from "../../components/InfinateScrollBox/InfiniteScrollBox";
+import "./Home.css";
 import { useEffect } from "react";
 
 const Home = ({ images, setNavButtonBorders }) => {

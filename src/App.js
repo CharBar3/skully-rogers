@@ -1,15 +1,14 @@
 import "./App.css";
-import Navbar from "./components/navbar/NavBar";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
+import Legends from "./pages/Legends/Legends";
+
+import TopNavBar from "./components/TopNavBar/TopNavBar";
+import MobileNavBarMenu from "./components/TopNavBar/MobileNavBarMenu";
+
 import images from "./images";
 
 import { Routes, Route } from "react-router-dom";
-import NewArrivals from "./pages/NewArrivals";
-import MobileNavBar from "./components/MobileNavBar";
-import MobileNavBarMenu from "./components/MobileNavBarMenu";
 import { useState } from "react";
-import TopNavBar from "./components/TopNavBar/TopNavBar";
-import Legends from "./pages/Legends/Legends";
 
 function App() {
   const [mobileNavMenuStatus, setMobileNavMenuStatus] = useState(false);
@@ -31,15 +30,6 @@ function App() {
   });
   return (
     <div className="App">
-      {/* <Navbar
-        navButtonBorders={navButtonBorders}
-        setNavButtonBorders={setNavButtonBorders}
-      />
-      <MobileNavBar
-        openCloseMenu={openCloseMenu}
-        menuStatus={menuStatus}
-        setMenuStatus={setMenuStatus}
-      /> */}
       <TopNavBar
         openCloseMobileNavMenu={openCloseMobileNavMenu}
         mobileNavMenuStatus={mobileNavMenuStatus}

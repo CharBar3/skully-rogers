@@ -1,4 +1,4 @@
-import "../styles/componentStyles/InfiniteScrollBox.css";
+import "./InfiniteScrollBox.css";
 
 const InfiniteScrollBox = ({ images }) => {
   const showImages = images.map(({ src, alt }, index) => {

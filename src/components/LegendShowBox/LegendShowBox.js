@@ -25,7 +25,7 @@ const LegendShowBox = ({
             <h3>Etsy</h3>
             <button>Twitch Overlays</button>
           </div>
-          <div className="legends-show-box-links-Red-Bubble-div">
+          <div className="legends-show-box-links-red-bubble-div">
             <h3>Red Bubble</h3>
             <button>Prints</button>
           </div>

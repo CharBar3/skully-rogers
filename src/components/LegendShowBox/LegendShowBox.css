@@ -19,7 +19,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 375px;
   }
   .legend-show-box-content-and-links-div h2 {
     text-transform: uppercase;
@@ -37,6 +36,11 @@
   }
   .legends-show-box-links-etsy-div {
     margin-right: 8px;
+  }
+  .legends-show-box-links-red-bubble-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .legend-show-box-links-div h3 {
     font-size: 28px;

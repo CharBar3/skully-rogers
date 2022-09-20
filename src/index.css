@@ -6,8 +6,8 @@
 
 @font-face {
   font-family: "DINAlternate-Bold";
-  src: local("DINAlternate-Bold") url(./fonts/DINAlternate-Bold.otf)
-    format("onlytype");
+  src: local("DINAlternate-Bold"),
+    url(./fonts/DINAlternate-Bold.otf) format("onlytype");
 }
 
 html {

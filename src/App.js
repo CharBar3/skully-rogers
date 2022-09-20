@@ -23,6 +23,13 @@ function App() {
       setMobileNavMenuStatus(false);
     }
   };
+  const handleResize = () => {
+    setMobileNavMenuStatus(false);
+    openCloseMobileNavMenu();
+  };
+
+  window.addEventListener("resize", handleResize);
+
   const [navButtonBorders, setNavButtonBorders] = useState({
     home: "2px solid black",
     legends: "",

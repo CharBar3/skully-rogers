@@ -24,8 +24,10 @@ function App() {
     }
   };
   const handleResize = () => {
-    setMobileNavMenuStatus(false);
-    openCloseMobileNavMenu();
+    if (window.innerWidth > 600) {
+      setMobileNavMenuStatus(false);
+      openCloseMobileNavMenu();
+    }
   };
 
   window.addEventListener("resize", handleResize);

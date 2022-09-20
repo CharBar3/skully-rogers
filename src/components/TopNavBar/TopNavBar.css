@@ -44,15 +44,12 @@
 
   #top-nav-bar-title-div-apex-friends-span {
     font-size: 40px;
-
-    /* removes extra space in font for characters with a tail like y */
-    position: relative;
-    /* top: 8px; */
+    position: absolute;
   }
   #top-nav-bar-title-div-by-limin-square-span {
     font-size: 20px;
-    position: relative;
-    /* top: -8px; */
+    position: absolute;
+    bottom: 0;
   }
   #top-nav-bar-mobile-nav-menu-icon-div {
     height: 64px;

@@ -22,9 +22,17 @@ function App() {
       setMenuStatus(false);
     }
   };
+  const [navButtonBorders, setNavButtonBorders] = useState({
+    home: "2px solid black",
+    newArrivals: "",
+    about: "",
+  });
   return (
     <div className="App">
-      <Navbar />
+      <Navbar
+        navButtonBorders={navButtonBorders}
+        setNavButtonBorders={setNavButtonBorders}
+      />
       <MobileNavBar
         openCloseMenu={openCloseMenu}
         menuStatus={menuStatus}
@@ -36,8 +44,22 @@ function App() {
         setMenuStatus={setMenuStatus}
       />
       <Routes>
-        <Route path="/" element={<Home images={images} />} />
-        <Route path="/NewArrivals" element={<NewArrivals images={images} />} />
+        <Route
+          path="/"
+          element={
+            <Home images={images} setNavButtonBorders={setNavButtonBorders} />
+          }
+        />
+        <Route
+          path="/NewArrivals"
+          element={
+            <NewArrivals
+              navButtonBorders={navButtonBorders}
+              setNavButtonBorders={setNavButtonBorders}
+              images={images}
+            />
+          }
+        />
       </Routes>
     </div>
   );

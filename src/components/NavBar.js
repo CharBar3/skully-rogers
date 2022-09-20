@@ -2,13 +2,7 @@ import "../styles/componentStyles/NavBar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const NavBar = () => {
-  const [buttonBorders, setButtonBorders] = useState({
-    home: "2px solid black",
-    newArrivals: "",
-    about: "",
-  });
-
+const NavBar = ({ navButtonBorders, setNavButtonBorders }) => {
   return (
     <div id="navbar">
       <div id="navbar-inner">
@@ -16,7 +10,7 @@ const NavBar = () => {
           <Link
             to="/"
             onClick={() =>
-              setButtonBorders({
+              setNavButtonBorders({
                 home: "2px solid black",
                 newArrivals: "",
                 about: "",
@@ -34,7 +28,7 @@ const NavBar = () => {
             id="navbar-title"
             to="/"
             onClick={() =>
-              setButtonBorders({
+              setNavButtonBorders({
                 home: "2px solid black",
                 newArrivals: "",
                 about: "",
@@ -48,9 +42,9 @@ const NavBar = () => {
           <nav>
             <Link to="/">
               <button
-                style={{ border: buttonBorders.home }}
+                style={{ border: navButtonBorders.home }}
                 onClick={() =>
-                  setButtonBorders({
+                  setNavButtonBorders({
                     home: "2px solid black",
                     newArrivals: "",
                     about: "",
@@ -62,9 +56,9 @@ const NavBar = () => {
             </Link>
             <Link to="/NewArrivals">
               <button
-                style={{ border: buttonBorders.newArrivals }}
+                style={{ border: navButtonBorders.newArrivals }}
                 onClick={() =>
-                  setButtonBorders({
+                  setNavButtonBorders({
                     home: "",
                     newArrivals: "2px solid black",
                     about: "",
@@ -76,7 +70,7 @@ const NavBar = () => {
             </Link>
             <Link>
               <button
-                style={{ border: buttonBorders.about }}
+                style={{ border: navButtonBorders.about }}
                 onClick={() =>
                   setButtonBorders({
                     home: "",

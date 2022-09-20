@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const MobileNavBarMenu = ({ openCloseMenu, menuStatus }) => {
   return (
-    <div id="MobileNavBarMenu">
-      <div id="MobileNavBarMenu-inner">
-        <div id="mobile-navbar-menu-links">
+    <div id="mobile-nav-bar-menu">
+      <div id="mobile-nav-bar-menu-inner-div">
+        <div id="mobile-nav-bar-menu-links-div">
           <Link to="/" onClick={() => openCloseMenu(menuStatus)}>
             Home
           </Link>
@@ -13,13 +13,13 @@ const MobileNavBarMenu = ({ openCloseMenu, menuStatus }) => {
             Legends
           </Link>
         </div>
-        <div id="mobile-navbar-menu-socials">
-          {/* <a href="https://www.instagram.com/liminsquare/"> */}
-          <img
-            src="https://img.icons8.com/ios/500/000000/instagram-new--v1.png"
-            alt="Instagram Logo"
-          />
-          {/* </a> */}
+        <div id="mobile-nav-bar-menu-socials-div">
+          <a href="https://www.instagram.com/liminsquare/">
+            <img
+              src="https://img.icons8.com/ios/500/000000/instagram-new--v1.png"
+              alt="Instagram Logo"
+            />
+          </a>
         </div>
       </div>
     </div>

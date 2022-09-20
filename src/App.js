@@ -14,7 +14,7 @@ function App() {
   const [mobileNavMenuStatus, setMobileNavMenuStatus] = useState(false);
 
   const openCloseMobileNavMenu = (mobileNavMenuStatus) => {
-    const navMenu = document.querySelector("#MobileNavBarMenu");
+    const navMenu = document.querySelector("#mobile-nav-bar-menu");
     if (mobileNavMenuStatus === false) {
       navMenu.style.display = "block";
       setMobileNavMenuStatus(true);

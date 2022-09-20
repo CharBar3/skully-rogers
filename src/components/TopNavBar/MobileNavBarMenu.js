@@ -14,7 +14,7 @@ const MobileNavBarMenu = ({ openCloseMenu, menuStatus }) => {
           </Link>
         </div>
         <div id="mobile-nav-bar-menu-socials-div">
-          <a href="https://www.instagram.com/liminsquare/">
+          <a href="https://www.instagram.com/liminsquare/" target="_blank">
             <img
               src="https://img.icons8.com/ios/500/000000/instagram-new--v1.png"
               alt="Instagram Logo"

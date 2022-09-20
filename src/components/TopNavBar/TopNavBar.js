@@ -1,6 +1,10 @@
 import "./TopNavBar.css";
 import { Link } from "react-router-dom";
-const TopNavBar = ({ openCloseMobileNavMenu, mobileNavMenuStatus }) => {
+const TopNavBar = ({
+  openCloseMobileNavMenu,
+  mobileNavMenuStatus,
+  navButtonBorders,
+}) => {
   return (
     <div id="top-nav-bar">
       <div id="top-nav-bar-inner-div">
@@ -29,29 +33,41 @@ const TopNavBar = ({ openCloseMobileNavMenu, mobileNavMenuStatus }) => {
         <div id="top-nav-bar-navigation-and-socials">
           <nav>
             <Link to="/">
-              <button>
+              <button
+                style={{
+                  border: navButtonBorders.home,
+                }}
+              >
                 <span>Home</span>
               </button>
             </Link>
             <Link to="/Legends">
-              <button>
+              <button
+                style={{
+                  border: navButtonBorders.legends,
+                }}
+              >
                 <span>Legends</span>
               </button>
             </Link>
             <Link>
-              <button>
+              <button
+                style={{
+                  border: navButtonBorders.theArtist,
+                }}
+              >
                 <span>The Artist</span>
               </button>
             </Link>
           </nav>
-          <div id="top-nav-bar-socials">
-            {/* <a href="https://www.instagram.com/liminsquare/"> */}
-            <img
-              src="https://img.icons8.com/ios/500/000000/instagram-new--v1.png"
-              alt="Instagram Logo"
-            />
-            {/* </a> */}
-          </div>
+          <a href="https://www.instagram.com/liminsquare/" target="_blank">
+            <div id="top-nav-bar-socials">
+              <img
+                src="https://img.icons8.com/ios/500/000000/instagram-new--v1.png"
+                alt="Instagram Logo"
+              />
+            </div>
+          </a>
         </div>
       </div>
     </div>

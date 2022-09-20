@@ -1,7 +1,23 @@
 import LegendShowBox from "../../components/LegendShowBox/LegendShowBox";
 import "./Legends.css";
+import { useEffect } from "react";
 
-const Legends = ({ images }) => {
+const Legends = ({ images, setNavButtonBorders }) => {
+  useEffect(() => {
+    setNavButtonBorders({
+      home: "",
+      legends: "2px solid black",
+      about: "",
+    });
+    return () => {
+      setNavButtonBorders({
+        home: "",
+        legends: "2px solid black",
+        about: "",
+      });
+    };
+  }, []);
+
   const showLegends = images.map(
     ({ name, src, alt, etsyLink, redBubbleLink, quote, description }) => {
       return (

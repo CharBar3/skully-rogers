@@ -11,6 +11,21 @@ const Home = ({ images, setNavButtonBorders }) => {
   //   });
   // });
 
+  useEffect(() => {
+    setNavButtonBorders({
+      home: "2px solid black",
+      legends: "",
+      about: "",
+    });
+    return () => {
+      setNavButtonBorders({
+        home: "2px solid black",
+        legends: "",
+        about: "",
+      });
+    };
+  }, []);
+
   return (
     <div id="HomePage-div">
       <InfiniteScrollBox images={images} />

@@ -33,6 +33,7 @@ function App() {
       <TopNavBar
         openCloseMobileNavMenu={openCloseMobileNavMenu}
         mobileNavMenuStatus={mobileNavMenuStatus}
+        navButtonBorders={navButtonBorders}
       />
       <MobileNavBarMenu
         openCloseMobileNavMenu={openCloseMobileNavMenu}

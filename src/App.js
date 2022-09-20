@@ -1,5 +1,5 @@
 import "./App.css";
-import Navbar from "./components/NavBar";
+import Navbar from "./components/navbar/NavBar";
 import Home from "./pages/Home";
 import images from "./images";
 
@@ -8,6 +8,7 @@ import NewArrivals from "./pages/NewArrivals";
 import MobileNavBar from "./components/MobileNavBar";
 import MobileNavBarMenu from "./components/MobileNavBarMenu";
 import { useState } from "react";
+import TopNavBar from "./components/TopNavBar/TopNavBar";
 
 function App() {
   const [menuStatus, setMenuStatus] = useState(false);
@@ -29,7 +30,7 @@ function App() {
   });
   return (
     <div className="App">
-      <Navbar
+      {/* <Navbar
         navButtonBorders={navButtonBorders}
         setNavButtonBorders={setNavButtonBorders}
       />
@@ -42,7 +43,8 @@ function App() {
         openCloseMenu={openCloseMenu}
         menuStatus={menuStatus}
         setMenuStatus={setMenuStatus}
-      />
+      /> */}
+      <TopNavBar />
       <Routes>
         <Route
           path="/"

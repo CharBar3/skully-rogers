@@ -1,0 +1,141 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #top-nav-bar {
+    height: 64px;
+    background-color: rgb(255, 241, 0);
+    width: 100vw;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+  }
+  #top-nav-bar a {
+    color: black;
+    text-decoration: none;
+  }
+
+  #top-nav-bar-logo-and-title-div {
+    display: flex;
+  }
+
+  #top-nav-bar-logo-div {
+    height: 64px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #top-nav-bar-logo-div img {
+    height: 75%;
+  }
+
+  #top-nav-bar-title-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #top-nav-bar-title-div-apex-friends-span {
+    font-size: 40px;
+
+    /* removes extra space in font for characters with a tail like y */
+    position: relative;
+    top: 8px;
+  }
+  #top-nav-bar-title-div-by-limin-square-span {
+    font-size: 20px;
+    position: relative;
+    top: -8px;
+  }
+  #top-nav-bar-mobile-nav-menu-icon-div {
+    height: 64px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #top-nav-bar-mobile-nav-menu-icon-div img {
+    height: 75%;
+  }
+
+  #top-nav-bar-navigation-and-socials {
+    display: none;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #top-nav-bar {
+    height: 64px;
+    background-color: rgb(255, 241, 0);
+    width: 100vw;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+  }
+  #top-nav-bar a {
+    color: black;
+    text-decoration: none;
+  }
+
+  #top-nav-bar-logo-and-title-div {
+    display: flex;
+  }
+
+  #top-nav-bar-logo-div {
+    height: 64px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #top-nav-bar-logo-div img {
+    height: 75%;
+  }
+
+  #top-nav-bar-title-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #top-nav-bar-title-div-apex-friends-span {
+    font-size: 40px;
+
+    /* removes extra space in font for characters with a tail like y */
+    position: relative;
+    top: 8px;
+  }
+  #top-nav-bar-title-div-by-limin-square-span {
+    font-size: 20px;
+    position: relative;
+    top: -8px;
+  }
+
+  #top-nav-bar-navigation-and-socials {
+    height: 100%;
+
+    display: flex;
+  }
+
+  #nav button {
+  }
+
+  #top-nav-bar-socials {
+    height: 100%;
+  }
+  #top-nav-bar-socials img {
+    height: 100%;
+  }
+
+  #top-nav-bar-mobile-nav-menu-icon-div {
+    display: none;
+  }
+}
+/* Medium devices (landscape tablets, 900px and up) */
+@media only screen and (min-width: 900px) {
+}
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+/* Extra large devices (large laptops and desktops, 1536px and up) */
+@media only screen and (min-width: 1536px) {
+}

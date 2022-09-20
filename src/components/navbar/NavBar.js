@@ -1,6 +1,6 @@
-import "../styles/componentStyles/NavBar.css";
+import "./NavBar.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
 
 const NavBar = ({ navButtonBorders, setNavButtonBorders }) => {
   return (
@@ -72,7 +72,7 @@ const NavBar = ({ navButtonBorders, setNavButtonBorders }) => {
               <button
                 style={{ border: navButtonBorders.about }}
                 onClick={() =>
-                  setButtonBorders({
+                  setNavButtonBorders({
                     home: "",
                     newArrivals: "",
                     about: "2px solid black",

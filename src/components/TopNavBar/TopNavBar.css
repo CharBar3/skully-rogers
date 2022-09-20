@@ -1,11 +1,10 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #top-nav-bar {
-    text-transform: uppercase;
-
     position: sticky;
     top: 0;
 
+    text-transform: uppercase;
     height: 64px;
     background-color: rgb(255, 241, 0);
     width: 100vw;
@@ -48,12 +47,12 @@
 
     /* removes extra space in font for characters with a tail like y */
     position: relative;
-    top: 8px;
+    /* top: 8px; */
   }
   #top-nav-bar-title-div-by-limin-square-span {
     font-size: 20px;
     position: relative;
-    top: -8px;
+    /* top: -8px; */
   }
   #top-nav-bar-mobile-nav-menu-icon-div {
     height: 64px;

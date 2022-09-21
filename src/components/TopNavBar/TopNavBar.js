@@ -63,7 +63,7 @@ const TopNavBar = ({
           <a href="https://www.instagram.com/liminsquare/" target="_blank">
             <div id="top-nav-bar-socials">
               <img
-                src="https://img.icons8.com/ios/500/000000/instagram-new--v1.png"
+                src="https://img.icons8.com/material-outlined/384/000000/instagram-new--v1.png"
                 alt="Instagram Logo"
               />
             </div>

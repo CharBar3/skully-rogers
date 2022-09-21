@@ -223,10 +223,6 @@
     top: -8px;
   }
 
-  nav {
-    width: 400px;
-  }
-
   nav button {
     font-size: 40px;
   }
@@ -246,4 +242,17 @@
 }
 /* Extra large devices (large laptops and desktops, 1536px and up) */
 @media only screen and (min-width: 1536px) {
+}
+
+@media (orientation: landscape) {
+  #top-nav-bar-title-div-apex-friends-span {
+    font-size: 40px;
+    /* position: relative; */
+    /* top: 8px; */
+  }
+  #top-nav-bar-title-div-by-limin-square-span {
+    font-size: 20px;
+    /* position: relative; */
+    /* top: -8px; */
+  }
 }

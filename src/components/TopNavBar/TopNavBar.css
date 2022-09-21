@@ -248,13 +248,11 @@
   #top-nav-bar-title-div-apex-friends-span {
     font-size: 40px;
     position: relative;
-    /* top: 8px; */
-    top: 23px;
+    top: 8px;
   }
   #top-nav-bar-title-div-by-limin-square-span {
     font-size: 20px;
     position: relative;
-    /* top: -8px; */
-    top: -23px;
+    top: -4px;
   }
 }

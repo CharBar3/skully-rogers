@@ -30,7 +30,7 @@ function App() {
     }
   };
 
-  window.addEventListener("deviceorientationabsolute", handleResize);
+  window.addEventListener("resize", handleResize);
   window.addEventListener("orientationchange", handleResize);
 
   const [navButtonBorders, setNavButtonBorders] = useState({

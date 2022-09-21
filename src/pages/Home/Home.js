@@ -3,25 +3,17 @@ import "./Home.css";
 import { useEffect } from "react";
 
 const Home = ({ images, setNavButtonBorders }) => {
-  // useEffect(() => {
-  //   setNavButtonBorders({
-  //     home: "2px solid black",
-  //     newArrivals: "",
-  //     about: "",
-  //   });
-  // });
-
   useEffect(() => {
     setNavButtonBorders({
       home: "2px solid black",
       legends: "",
-      about: "",
+      theArtist: "",
     });
     return () => {
       setNavButtonBorders({
         home: "2px solid black",
         legends: "",
-        about: "",
+        theArtist: "",
       });
     };
   }, []);

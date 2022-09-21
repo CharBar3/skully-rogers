@@ -7,13 +7,13 @@ const Legends = ({ images, setNavButtonBorders }) => {
     setNavButtonBorders({
       home: "",
       legends: "2px solid black",
-      about: "",
+      theArtist: "",
     });
     return () => {
       setNavButtonBorders({
         home: "",
         legends: "2px solid black",
-        about: "",
+        theArtist: "",
       });
     };
   }, []);

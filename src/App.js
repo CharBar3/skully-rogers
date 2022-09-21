@@ -24,7 +24,6 @@ function App() {
     }
   };
   const handleResize = () => {
-    console.log("this happens");
     if (window.innerWidth > 600) {
       setMobileNavMenuStatus(false);
       openCloseMobileNavMenu();

@@ -24,13 +24,15 @@ function App() {
     }
   };
   const handleResize = () => {
+    console.log("this happens");
     if (window.innerWidth > 600) {
       setMobileNavMenuStatus(false);
       openCloseMobileNavMenu();
     }
   };
 
-  window.addEventListener("resize", handleResize);
+  window.addEventListener("deviceorientationabsolute", handleResize);
+  window.addEventListener("orientationchange", handleResize);
 
   const [navButtonBorders, setNavButtonBorders] = useState({
     home: "2px solid black",

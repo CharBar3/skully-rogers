@@ -46,7 +46,7 @@ const Bio = () => {
           to look good even at small scale especially with the thick line work.
         </p>
         <div>
-          <button>Portfolio</button>
+          <button id="hide-on-big-screen">Portfolio</button>
         </div>
       </div>
     </div>

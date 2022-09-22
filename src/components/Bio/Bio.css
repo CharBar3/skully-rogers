@@ -70,6 +70,8 @@
     flex-direction: column;
     overflow-x: hidden;
     margin: 25px;
+    min-height: 700px;
+    max-width: 1400px;
   }
 
   #bio-content-div {
@@ -133,6 +135,9 @@
   #bio-content-div {
     padding: 25px;
     width: 60%;
+  }
+  #hide-on-big-screen {
+    display: none;
   }
 }
 

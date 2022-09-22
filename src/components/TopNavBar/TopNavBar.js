@@ -50,7 +50,7 @@ const TopNavBar = ({
                 <span>Legends</span>
               </button>
             </Link>
-            <Link>
+            <Link to="/TheArtist">
               <button
                 style={{
                   border: navButtonBorders.theArtist,

@@ -19,3 +19,11 @@ html {
 body {
   margin: 0;
 }
+
+/* .InfiniteScrollBox-Component-div::-webkit-scrollbar {
+  display: none;
+}
+.InfiniteScrollBox-Component-div {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */

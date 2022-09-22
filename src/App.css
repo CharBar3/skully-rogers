@@ -1,18 +1,17 @@
-/* @font-face {
-  font-family: "DINCondensed-Bold";
-  src: local("DINCondensed-Bold"), url("./styles/fonts/DINCondensed-Bold.ttf"),
-    format("truetype");
-} */
-
 .App {
   font-family: "DINCondensed-Bold";
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* width: 100vw; */
 }
 
 .App button {
   color: black;
+}
+
+:root {
+  --yello: rgb(255, 241, 0);
 }
 
 /* Extra small devices (phones, 600px and down) */

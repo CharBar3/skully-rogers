@@ -12,6 +12,9 @@ const MobileNavBarMenu = ({ openCloseMenu, menuStatus }) => {
           <Link to="/Legends" onClick={() => openCloseMenu(menuStatus)}>
             Legends
           </Link>
+          <Link to="/TheArtist" onClick={() => openCloseMenu(menuStatus)}>
+            The Artist
+          </Link>
         </div>
         <div id="mobile-nav-bar-menu-socials-div">
           <a href="https://www.instagram.com/liminsquare/" target="_blank">

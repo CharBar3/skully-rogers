@@ -9,6 +9,7 @@ import images from "./images";
 
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
+import TheArtist from "./pages/TheArtist/TheArtist";
 
 function App() {
   const [mobileNavMenuStatus, setMobileNavMenuStatus] = useState(false);
@@ -64,6 +65,10 @@ function App() {
               images={images}
             />
           }
+        />
+        <Route
+          path="/TheArtist"
+          element={<TheArtist setNavButtonBorders={setNavButtonBorders} />}
         />
       </Routes>
     </div>

@@ -9,14 +9,6 @@
   transform: skew(-15deg, 3deg);
 }
 
-/* .InfiniteScrollBox-Component-div::-webkit-scrollbar {
-  display: none;
-}
-.InfiniteScrollBox-Component-div {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-} */
-
 .vertical-div {
   display: flex;
   flex-direction: column;

@@ -39,8 +39,9 @@ const images = [
     price: 555,
     etsyLink: "",
     redBubbleLink: "",
-    quote: "",
-    description: "",
+    quote: "The skies belong to me now.",
+    description:
+      "Bold, brash, fiery and fierce, Kairi Imahara isn’t above greasing palms and bending the law. Like her father, she is most comfortable in the skies. ",
   },
 
   {
@@ -50,8 +51,9 @@ const images = [
     price: 555,
     etsyLink: "",
     redBubbleLink: "",
-    quote: "",
-    description: "",
+    quote: "Power is everything. You only think you have it.",
+    description:
+      "Though Natalie “Wattson” Paquette could be completely distracted one moment and hyper-focused the next, electricity grounds her – its ordered, predictable flow made sense in a way the rest of the world doesn’t. ",
   },
   {
     src: "https://i.imgur.com/UWo0FQD.png",
@@ -60,8 +62,9 @@ const images = [
     price: 555,
     etsyLink: "",
     redBubbleLink: "",
-    quote: "",
-    description: "",
+    quote: "Check yo self - or wreck yo self.",
+    description:
+      "Alexander Nox used to be one of the brightest scientists in the employ of Humbert Labs. But he soon realized that progress was being hampered by his testing methods. Now competing in the Apex Games under the name Caustic, he puts his gaseous creations to work and observes their effects with great interest.",
   },
 
   {
@@ -71,8 +74,9 @@ const images = [
     price: 555,
     etsyLink: "",
     redBubbleLink: "",
-    quote: "",
-    description: "",
+    quote: "I don't concern myself with the ambitions of insects.",
+    description:
+      "Alexander Nox used to be one of the brightest scientists in the employ of Humbert Labs. But he soon realized that progress was being hampered by his testing methods. Now competing in the Apex Games under the name Caustic, he puts his gaseous creations to work and observes their effects with great interest.",
   },
   {
     src: "https://i.imgur.com/XSdc7pN.png",
@@ -81,8 +85,9 @@ const images = [
     price: 555,
     etsyLink: "",
     redBubbleLink: "",
-    quote: "",
-    description: "",
+    quote: "Try to move me; it'll be fun.",
+    description:
+      "Gibraltar is a gentle giant with a wild side. He has always been skilled at getting others out of dangerous situations that are common in the Outlands. Like a big brother, he always has your back.",
   },
   {
     src: "https://i.imgur.com/JXDbAfl.png",
@@ -91,8 +96,8 @@ const images = [
     price: 555,
     etsyLink: "",
     redBubbleLink: "",
-    quote: "",
-    description: "",
+    quote: "I was born ready, so I don't know what 'not ready' is.",
+    description: `Xiomara “Mara” Contreras was born and raised alone on the wild ice planet Págos by her survivalist mother, Xenia. Mara proved gifted with a sniper rifle from the moment she was big enough to look through the scope and reach the trigger. `,
   },
 ];
 

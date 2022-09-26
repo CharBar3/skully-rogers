@@ -53,7 +53,7 @@
 
   #top-nav-bar-title-div-by-limin-square-span {
     font-size: 20px;
-    line-height: 0px;
+    line-height: 2px;
   }
 
   #test-span {
@@ -134,7 +134,7 @@
   }
   #top-nav-bar-title-div-by-limin-square-span {
     font-size: 20px;
-    line-height: 0px;
+    line-height: 2px;
   }
 
   #top-nav-bar-navigation-and-socials {
@@ -220,7 +220,7 @@
   }
   #top-nav-bar-title-div-by-limin-square-span {
     font-size: 34px;
-    line-height: 0px;
+    line-height: 2px;
   }
 
   nav button {
@@ -235,10 +235,10 @@
 }
 /* Large devices (laptops/desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  /* #top-nav-bar-inner-div {
+  #top-nav-bar-inner-div {
     min-width: 1200px;
     max-width: 1400px;
-  } */
+  }
 }
 /* Extra large devices (large laptops and desktops, 1536px and up) */
 @media only screen and (min-width: 1536px) {

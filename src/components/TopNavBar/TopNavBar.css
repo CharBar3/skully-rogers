@@ -26,6 +26,7 @@
 
   #top-nav-bar-logo-and-title-div {
     display: flex;
+    align-items: center;
   }
 
   #top-nav-bar-logo-div {
@@ -43,17 +44,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 75%;
   }
 
   #top-nav-bar-title-div-apex-friends-span {
-    font-size: 40px;
-    position: absolute;
+    font-size: 30px;
+    position: relative;
+    top: 8px;
   }
 
   #top-nav-bar-title-div-by-limin-square-span {
-    font-size: 20px;
-    position: absolute;
-    bottom: 0;
+    font-size: 18px;
   }
 
   #top-nav-bar-mobile-nav-menu-icon-div {

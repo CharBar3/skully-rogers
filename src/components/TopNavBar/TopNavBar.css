@@ -27,7 +27,6 @@
 
   #top-nav-bar-logo-and-title-div {
     display: flex;
-    align-items: flex-start;
   }
 
   #top-nav-bar-logo-div {
@@ -49,14 +48,16 @@
 
   #top-nav-bar-title-div-apex-friends-span {
     font-size: 40px;
-    position: relative;
-    top: 6px;
+    line-height: 40px;
   }
 
   #top-nav-bar-title-div-by-limin-square-span {
     font-size: 20px;
-    position: relative;
-    bottom: 10px;
+    line-height: 0px;
+  }
+
+  #test-span {
+    font-size: 40px;
   }
 
   #top-nav-bar-mobile-nav-menu-icon-div {

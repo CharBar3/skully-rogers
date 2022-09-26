@@ -130,13 +130,11 @@
 
   #top-nav-bar-title-div-apex-friends-span {
     font-size: 40px;
-    position: relative;
-    top: 8px;
+    line-height: 40px;
   }
   #top-nav-bar-title-div-by-limin-square-span {
     font-size: 20px;
-    position: relative;
-    top: -8px;
+    line-height: 0px;
   }
 
   #top-nav-bar-navigation-and-socials {
@@ -217,14 +215,12 @@
   }
 
   #top-nav-bar-title-div-apex-friends-span {
-    font-size: 50px;
-    position: relative;
-    top: 8px;
+    font-size: 66px;
+    line-height: 66px;
   }
   #top-nav-bar-title-div-by-limin-square-span {
-    font-size: 25px;
-    position: relative;
-    top: -8px;
+    font-size: 34px;
+    line-height: 0px;
   }
 
   nav button {
@@ -239,16 +235,16 @@
 }
 /* Large devices (laptops/desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  #top-nav-bar-inner-div {
+  /* #top-nav-bar-inner-div {
     min-width: 1200px;
     max-width: 1400px;
-  }
+  } */
 }
 /* Extra large devices (large laptops and desktops, 1536px and up) */
 @media only screen and (min-width: 1536px) {
 }
 
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
   #top-nav-bar-title-div-apex-friends-span {
     position: relative;
     top: 8px;
@@ -257,4 +253,4 @@
     position: relative;
     top: -4px;
   }
-}
+} */

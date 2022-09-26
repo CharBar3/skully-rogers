@@ -49,19 +49,19 @@
   #top-nav-bar-title-div {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 80% 20%;
+    grid-template-rows: 64% 36%;
   }
 
   #top-nav-bar-title-div-apex-friends-span {
     display: flex;
     align-self: flex-end;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 20px;
   }
 
   #top-nav-bar-title-div-by-limin-square-span {
     font-size: 20px;
-    line-height: 2px;
+    /* line-height: 20px; */
   }
 
   #test-span {

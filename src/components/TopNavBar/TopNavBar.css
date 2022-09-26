@@ -40,13 +40,21 @@
     height: 75%;
   }
 
-  #top-nav-bar-title-div {
+  /* #top-nav-bar-title-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  } */
+
+  #top-nav-bar-title-div {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80% 20%;
   }
 
   #top-nav-bar-title-div-apex-friends-span {
+    display: flex;
+    align-self: flex-end;
     font-size: 40px;
     line-height: 40px;
   }

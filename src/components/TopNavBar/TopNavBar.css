@@ -16,6 +16,7 @@
   #top-nav-bar-inner-div {
     display: flex;
     justify-content: space-between;
+    height: 100%;
     padding-right: 8px;
   }
 
@@ -26,7 +27,7 @@
 
   #top-nav-bar-logo-and-title-div {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
 
   #top-nav-bar-logo-div {
@@ -44,19 +45,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 75%;
   }
 
   #top-nav-bar-title-div-apex-friends-span {
     font-size: 40px;
     position: relative;
-    top: 8px;
+    top: 6px;
   }
 
   #top-nav-bar-title-div-by-limin-square-span {
     font-size: 20px;
     position: relative;
-    bottom: 6px;
+    bottom: 10px;
   }
 
   #top-nav-bar-mobile-nav-menu-icon-div {

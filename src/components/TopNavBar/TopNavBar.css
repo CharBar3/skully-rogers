@@ -110,12 +110,18 @@
     justify-content: flex-end;
   }
 
+  nav a {
+    all: unset;
+  }
+
   nav button {
     all: unset;
+    font-family: "DINCondensed-Bold";
     padding-left: 6px;
     padding-right: 6px;
-    font-family: "DINCondensed-Bold";
+    padding-top: 1px;
     font-variant-caps: all-small-caps;
+
     font-size: 26px;
 
     background: none;
@@ -126,6 +132,9 @@
     top: 0;
     left: 0;
     margin-right: 8px;
+
+    display: flex;
+    align-items: center;
   }
 
   nav button:hover {

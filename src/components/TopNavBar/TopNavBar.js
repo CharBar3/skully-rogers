@@ -9,18 +9,8 @@ const TopNavBar = ({
     <div id="top-nav-bar">
       <div id="top-nav-bar-inner-div">
         <Link to="/">
-          <div id="top-nav-bar-logo-and-title-div">
-            <div id="top-nav-bar-logo-div">
-              <img src="/liminsquare_logo.png" alt="Limin Square Logo" />
-            </div>
-            <div id="top-nav-bar-title-div">
-              <span id="top-nav-bar-title-div-apex-friends-span">
-                Apex Friends
-              </span>
-              <span id="top-nav-bar-title-div-by-limin-square-span">
-                By Limin Square
-              </span>
-            </div>
+          <div id="top-nav-bar-logo-div">
+            <img src="https://imgur.com/wubJyoi.png" />
           </div>
         </Link>
         <div id="top-nav-bar-mobile-nav-menu-icon-div">

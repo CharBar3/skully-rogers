@@ -25,43 +25,14 @@
     text-decoration: none;
   }
 
-  #top-nav-bar-logo-and-title-div {
-    display: flex;
-  }
-
   #top-nav-bar-logo-div {
     height: 64px;
-    width: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   #top-nav-bar-logo-div img {
     height: 75%;
-  }
-
-  /* #top-nav-bar-title-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  } */
-
-  #top-nav-bar-title-div {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 64% 36%;
-  }
-
-  #top-nav-bar-title-div-apex-friends-span {
-    display: flex;
-    align-self: flex-end;
-    font-size: 40px;
-    line-height: 20px;
-  }
-
-  #top-nav-bar-title-div-by-limin-square-span {
-    font-size: 20px;
-    /* line-height: 20px; */
   }
 
   #test-span {
@@ -115,34 +86,14 @@
     text-decoration: none;
   }
 
-  #top-nav-bar-logo-and-title-div {
-    display: flex;
-  }
-
   #top-nav-bar-logo-div {
     height: 64px;
-    width: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   #top-nav-bar-logo-div img {
     height: 75%;
-  }
-
-  #top-nav-bar-title-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  #top-nav-bar-title-div-apex-friends-span {
-    font-size: 40px;
-    line-height: 40px;
-  }
-  #top-nav-bar-title-div-by-limin-square-span {
-    font-size: 20px;
-    line-height: 2px;
   }
 
   #top-nav-bar-navigation-and-socials {
@@ -215,16 +166,6 @@
 
   #top-nav-bar-logo-div {
     height: 100px;
-    width: 100px;
-  }
-
-  #top-nav-bar-title-div-apex-friends-span {
-    font-size: 66px;
-    line-height: 66px;
-  }
-  #top-nav-bar-title-div-by-limin-square-span {
-    font-size: 34px;
-    line-height: 2px;
   }
 
   nav button {

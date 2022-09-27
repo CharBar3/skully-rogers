@@ -38,7 +38,7 @@ const TopNavBar = ({
                   border: navButtonBorders.home,
                 }}
               >
-                <span>Home</span>
+                Home
               </button>
             </Link>
             <Link to="/Legends">
@@ -47,7 +47,7 @@ const TopNavBar = ({
                   border: navButtonBorders.legends,
                 }}
               >
-                <span>Legends</span>
+                Legends
               </button>
             </Link>
             <Link to="/TheArtist">
@@ -56,7 +56,7 @@ const TopNavBar = ({
                   border: navButtonBorders.theArtist,
                 }}
               >
-                <span>The Artist</span>
+                The Artist
               </button>
             </Link>
           </nav>

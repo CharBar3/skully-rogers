@@ -33,6 +33,12 @@
     left: 0;
   }
 
+  #bio button:hover {
+    box-shadow: -5px 5px black;
+    top: -5px;
+    left: 5px;
+  }
+
   #bio-content-title-div h1 {
     font-size: 42px;
     text-transform: uppercase;
@@ -97,6 +103,12 @@
     transition: top 0.5s, left 0.5s, box-shadow 0.5s, font-size 0.5s;
     top: 0;
     left: 0;
+  }
+
+  #bio button:hover {
+    box-shadow: -5px 5px black;
+    top: -5px;
+    left: 5px;
   }
 
   #bio-content-title-div h1 {

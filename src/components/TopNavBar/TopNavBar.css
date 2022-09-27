@@ -111,6 +111,9 @@
   }
 
   nav button {
+    all: unset;
+    padding-left: 6px;
+    padding-right: 6px;
     font-family: "DINCondensed-Bold";
     font-variant-caps: all-small-caps;
     font-size: 26px;

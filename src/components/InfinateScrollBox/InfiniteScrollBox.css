@@ -1,91 +1,40 @@
-.InfiniteScrollBox-Component-div {
-  display: flex;
-  overflow-x: scroll;
+.InfiniteScrollBox {
+  width: 200%;
+  height: 200%;
+  max-height: 10475px;
+  max-width: 3000px;
+
   position: fixed;
-  top: -200px;
-  right: -200px;
-  bottom: -200px;
-  left: -200px;
-  transform: skew(-15deg, 3deg);
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+
+  overflow-x: scroll;
+  display: flex;
+  transform: skew(-14deg, 3deg);
 }
 
-.vertical-div {
+.Column {
   display: flex;
   flex-direction: column;
 }
 
-.vertical-div:nth-child(odd) {
-  margin-top: 210px;
+.Column:nth-child(odd) {
+  margin-top: 8%;
 }
 
-.vertical-div img {
-  width: 400px;
-  height: 400px;
-  margin: 20px;
+.ImageWrapper {
+  display: flex;
+  margin: 5%;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .vertical-div:nth-child(odd) {
-    margin-top: 84px;
-  }
-
-  .vertical-div img {
-    width: 160px;
-    height: 160px;
-    margin: 8px;
-    box-shadow: 4px 4px black;
-  }
+.ImageWrapper img {
+  width: 100%;
+  box-shadow: 1vw 1vw black;
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .vertical-div:nth-child(odd) {
-    margin-top: 105px;
-  }
 
-  .vertical-div img {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    box-shadow: 5px 5px black;
-  }
-}
-/* Medium devices (landscape tablets, 900px and up) */
-@media only screen and (min-width: 900px) {
-  .vertical-div:nth-child(odd) {
-    margin-top: 131px;
-  }
-
-  .vertical-div img {
-    width: 250px;
-    height: 250px;
-    margin: 12.5px;
-    box-shadow: 6.25px 6.25px black;
-  }
-}
-/* Large devices (laptops/desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .vertical-div:nth-child(odd) {
-    margin-top: 165px;
-  }
-
-  .vertical-div img {
-    width: 312.5px;
-    height: 312.5px;
-    margin: 16px;
-    box-shadow: 8px 8px black;
-  }
-}
-/* Extra large devices (large laptops and desktops, 1536px and up) */
-@media only screen and (min-width: 1536px) {
-  .vertical-div:nth-child(odd) {
-    margin-top: 247px;
-  }
-
-  .vertical-div img {
-    width: 470px;
-    height: 470px;
-    margin: 23.5px;
-    box-shadow: 11.75px 11.75px black;
+@media only screen and (max-width: 1500px) {
+  .InfiniteScrollBox {
   }
 }

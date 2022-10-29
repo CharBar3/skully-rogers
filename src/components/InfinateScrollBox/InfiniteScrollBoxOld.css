@@ -1,0 +1,132 @@
+.InfiniteScrollBox-Component-div {
+  position: fixed;
+  top: -200px;
+  right: -200px;
+  bottom: -200px;
+  left: -200px;
+
+  overflow-x: scroll;
+  display: flex;
+  transform: skew(-15deg, 3deg);
+}
+
+.vertical-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-div:nth-child(odd) {
+  margin-top: 210px;
+}
+
+.vertical-div img {
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .InfiniteScrollBox-Component-div {
+    position: fixed;
+    top: -300px;
+    right: -300px;
+    bottom: -300px;
+    left: -300px;
+  }
+
+  .vertical-div:nth-child(odd) {
+    margin-top: 84px;
+  }
+
+  .vertical-div img {
+    width: 160px;
+    height: 160px;
+    margin: 8px;
+    box-shadow: 4px 4px black;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .InfiniteScrollBox-Component-div {
+    position: fixed;
+    top: -400px;
+    right: -400px;
+    bottom: -400px;
+    left: -400px;
+  }
+
+  .vertical-div:nth-child(odd) {
+    margin-top: 105px;
+  }
+
+  .vertical-div img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    box-shadow: 5px 5px black;
+  }
+}
+/* Medium devices (landscape tablets, 900px and up) */
+@media only screen and (min-width: 900px) {
+  .InfiniteScrollBox-Component-div {
+    position: fixed;
+    top: -500px;
+    right: -500px;
+    bottom: -500px;
+    left: -500px;
+  }
+
+  .vertical-div:nth-child(odd) {
+    margin-top: 131px;
+  }
+
+  .vertical-div img {
+    width: 250px;
+    height: 250px;
+    margin: 12.5px;
+    box-shadow: 6.25px 6.25px black;
+  }
+}
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .InfiniteScrollBox-Component-div {
+    position: fixed;
+    top: -500px;
+    right: -500px;
+    bottom: -500px;
+    left: -500px;
+  }
+
+  .vertical-div:nth-child(odd) {
+    margin-top: 165px;
+  }
+
+  .vertical-div img {
+    width: 312.5px;
+    height: 312.5px;
+    margin: 16px;
+    box-shadow: 8px 8px black;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1536px and up) */
+@media only screen and (min-width: 1536px) {
+  .InfiniteScrollBox-Component-div {
+    position: fixed;
+    top: -800px;
+    right: -800px;
+    bottom: -800px;
+    left: -800px;
+  }
+  .vertical-div:nth-child(odd) {
+    margin-top: 247px;
+  }
+
+  .vertical-div img {
+    width: 470px;
+    height: 470px;
+    margin: 23.5px;
+    box-shadow: 11.75px 11.75px black;
+  }
+}

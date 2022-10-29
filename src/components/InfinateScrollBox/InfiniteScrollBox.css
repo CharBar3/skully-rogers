@@ -33,8 +33,3 @@
   width: 100%;
   box-shadow: 1vw 1vw black;
 }
-
-@media only screen and (max-width: 1500px) {
-  .InfiniteScrollBox {
-  }
-}

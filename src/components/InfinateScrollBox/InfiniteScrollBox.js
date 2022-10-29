@@ -63,9 +63,14 @@ const InfiniteScrollBox = ({ images }) => {
 
     if (e.currentTarget.scrollTop > resetPoint) {
       // e.currentTarget.scrollTop = 0;
-      e.currentTarget.scrollTo({
+      // e.currentTarget.scrollTo({
+      //   top: 0,
+      //   left: 0,
+      //   behavior: "instant",
+      // });
+      e.currentTarget.scroll({
         top: 0,
-        // left: 0,
+        left: 0,
         behavior: "instant",
       });
     }

@@ -1,6 +1,16 @@
 import "./InfiniteScrollBox.css";
 
+import { useEffect, useState } from "react";
+
 const InfiniteScrollBox = ({ images }) => {
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const showImages = images.map(({ src, alt }, index) => {
     return (
       <div className="ImageWrapper">
@@ -9,7 +19,16 @@ const InfiniteScrollBox = ({ images }) => {
     );
   });
 
-  const numberOfColumns = 6;
+  const [numberOfColumns, setNumberOfColumns] = useState(6);
+
+  const handleResize = () => {
+    if (window.innerWidth < 1500) {
+      setNumberOfColumns(6);
+    } else {
+      setNumberOfColumns(18);
+    }
+  };
+
   let Columns = [];
   let counter = 0;
   let fillerArray = [];
@@ -32,15 +51,18 @@ const InfiniteScrollBox = ({ images }) => {
   });
 
   const handleScroll = (e) => {
-    console.log("scrollHeight: ", e.currentTarget.scrollHeight);
-    console.log("top", e.currentTarget.scrollTop);
-    console.log("width", e.currentTarget.scrollWidth);
+    // console.log("scrollHeight: ", e.currentTarget.scrollHeight);
+    // console.log("top", e.currentTarget.scrollTop);
+    // console.log("width", e.currentTarget.scrollWidth);
 
-    const resetPoint = e.currentTarget.scrollHeight * 0.43;
+    let resetPoint = e.currentTarget.scrollHeight * 0.43;
+
+    if (window.innerWidth > 1500) {
+      resetPoint = e.currentTarget.scrollHeight * 0.334;
+    }
 
     if (e.currentTarget.scrollTop > resetPoint) {
       e.currentTarget.scrollTop = 0;
-      console.log("reset happened");
     }
   };
 

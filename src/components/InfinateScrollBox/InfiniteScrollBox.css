@@ -1,8 +1,6 @@
 .InfiniteScrollBox {
   width: 200%;
   height: 200%;
-  max-height: 10475px;
-  max-width: 3000px;
 
   position: fixed;
   top: -50%;
@@ -32,4 +30,15 @@
 .ImageWrapper img {
   width: 100%;
   box-shadow: 1vw 1vw black;
+}
+
+@media only screen and (min-width: 1500px) {
+  .Column:nth-child(odd) {
+    margin-top: 2.9%;
+  }
+
+  .ImageWrapper img {
+    width: 100%;
+    box-shadow: 0.33vw 0.33vw black;
+  }
 }

@@ -11,6 +11,14 @@ const InfiniteScrollBox = ({ images }) => {
     };
   }, []);
 
+  const handleResize = () => {
+    if (window.innerWidth < 1500) {
+      setNumberOfColumns(6);
+    } else {
+      setNumberOfColumns(18);
+    }
+  };
+
   const showImages = images.map(({ src, alt }, index) => {
     return (
       <div className="ImageWrapper">
@@ -20,14 +28,6 @@ const InfiniteScrollBox = ({ images }) => {
   });
 
   const [numberOfColumns, setNumberOfColumns] = useState(6);
-
-  const handleResize = () => {
-    if (window.innerWidth < 1500) {
-      setNumberOfColumns(6);
-    } else {
-      setNumberOfColumns(18);
-    }
-  };
 
   let Columns = [];
   let counter = 0;
@@ -45,34 +45,45 @@ const InfiniteScrollBox = ({ images }) => {
 
     Columns.push(thingToPush);
   }
+  const [columnsState, setColumnsState] = useState(Columns);
 
-  const showColumns = Columns.map((images) => {
+  const showColumns = columnsState.map((images) => {
     return <div className="Column">{images}</div>;
   });
 
-  const handleScroll = (e) => {
+  // works for Android but IOS stops scrolling on scrollto reset
+  const handleScrollOld = (e) => {
     // console.log("scrollHeight: ", e.currentTarget.scrollHeight);
     // console.log("top", e.currentTarget.scrollTop);
     // console.log("width", e.currentTarget.scrollWidth);
-
     let resetPoint = e.currentTarget.scrollHeight * 0.43;
-
     if (window.innerWidth > 1500) {
       resetPoint = e.currentTarget.scrollHeight * 0.334;
     }
-
     if (e.currentTarget.scrollTop > resetPoint) {
-      // e.currentTarget.scrollTop = 0;
-      // e.currentTarget.scrollTo({
-      //   top: 0,
-      //   left: 0,
-      //   behavior: "instant",
-      // });
       e.currentTarget.scroll({
         top: 0,
         left: 0,
         behavior: "instant",
       });
+    }
+  };
+
+  let scrollTopCheckpoint = 2000;
+
+  const handleScroll = (e) => {
+    console.log();
+
+    if (e.currentTarget.scrollTop > scrollTopCheckpoint) {
+      scrollTopCheckpoint += 2000;
+      for (let index = 0; index < columnsState.length; index++) {
+        const column = columnsState[index];
+
+        const newColumn = column.concat(showImages);
+
+        columnsState[index] = newColumn;
+      }
+      setColumnsState([...columnsState]);
     }
   };
 

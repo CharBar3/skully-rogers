@@ -71,7 +71,7 @@ const InfiniteScrollBox = ({ images }) => {
 
   let checkpoint = 0;
   const handleScroll = (e) => {
-    checkpoint += 20;
+    checkpoint += 25;
     console.log("checkpoint " + checkpoint);
     if (checkpoint > 100) {
       checkpoint = 0;

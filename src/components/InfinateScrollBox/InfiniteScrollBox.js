@@ -69,13 +69,13 @@ const InfiniteScrollBox = ({ images }) => {
     }
   };
 
-  let scrollTopCheckpoint = 1000;
+  let scrollTopCheckpoint = 500;
 
   const handleScroll = (e) => {
     console.log();
 
     if (e.currentTarget.scrollTop > scrollTopCheckpoint) {
-      scrollTopCheckpoint += 1000;
+      scrollTopCheckpoint += 500;
       for (let index = 0; index < columnsState.length; index++) {
         const column = columnsState[index];
 

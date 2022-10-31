@@ -69,7 +69,7 @@ const InfiniteScrollBox = ({ images }) => {
     }
   };
 
-  let scrollTopCheckpoint = 500;
+  let scrollTopCheckpoint = 100;
 
   const handleScroll = (e) => {
     console.log();

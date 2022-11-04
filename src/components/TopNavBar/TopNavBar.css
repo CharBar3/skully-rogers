@@ -49,7 +49,7 @@
   }
 
   #top-nav-bar-mobile-nav-menu-icon-div img {
-    height: 75%;
+    height: 60%;
   }
 
   #top-nav-bar-navigation-and-socials {
@@ -125,7 +125,7 @@
     font-size: 26px;
 
     background: none;
-    border: 2px solid rgba(0, 0, 0, 0);
+    border: 3px solid rgba(0, 0, 0, 0);
 
     position: relative;
     transition: top 0.5s, left 0.5s, box-shadow 0.5s, font-size 0.5s;
@@ -141,7 +141,7 @@
     box-shadow: -5px 5px black;
     top: -5px;
     left: 5px;
-    border: 2px solid black;
+    border: 3px solid black;
   }
 
   nav button:active {

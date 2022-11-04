@@ -35,10 +35,11 @@ function App() {
   window.addEventListener("orientationchange", handleResize);
 
   const [navButtonBorders, setNavButtonBorders] = useState({
-    home: "2px solid black",
+    home: "3px solid black",
     legends: "",
     theArtist: "",
   });
+
   return (
     <div className="App">
       <TopNavBar

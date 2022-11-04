@@ -5,16 +5,16 @@ import { useEffect } from "react";
 const Home = ({ images, setNavButtonBorders }) => {
   useEffect(() => {
     setNavButtonBorders({
-      home: "2px solid black",
+      home: "3px solid black",
       legends: "",
       theArtist: "",
     });
     return () => {
-      setNavButtonBorders({
-        home: "2px solid black",
-        legends: "",
-        theArtist: "",
-      });
+      // setNavButtonBorders({
+      //   home: "3px solid black",
+      //   legends: "",
+      //   theArtist: "",
+      // });
     };
   }, []);
 

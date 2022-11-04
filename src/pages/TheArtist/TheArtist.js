@@ -8,14 +8,14 @@ const TheArtist = ({ setNavButtonBorders }) => {
     setNavButtonBorders({
       home: "",
       legends: "",
-      theArtist: "2px solid black",
+      theArtist: "3px solid black",
     });
     return () => {
-      setNavButtonBorders({
-        home: "",
-        legends: "",
-        theArtist: "2px solid black",
-      });
+      // setNavButtonBorders({
+      //   home: "",
+      //   legends: "",
+      //   theArtist: "2px solid black",
+      // });
     };
   }, []);
   return (

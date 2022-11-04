@@ -6,15 +6,15 @@ const Legends = ({ images, setNavButtonBorders }) => {
   useEffect(() => {
     setNavButtonBorders({
       home: "",
-      legends: "2px solid black",
+      legends: "3px solid black",
       theArtist: "",
     });
     return () => {
-      setNavButtonBorders({
-        home: "",
-        legends: "2px solid black",
-        theArtist: "",
-      });
+      // setNavButtonBorders({
+      //   home: "",
+      //   legends: "2px solid black",
+      //   theArtist: "",
+      // });
     };
   }, []);
 

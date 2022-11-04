@@ -1,5 +1,4 @@
 import "./InfiniteScrollBox.css";
-
 import { useEffect, useState } from "react";
 
 const InfiniteScrollBox = ({ images }) => {
@@ -11,11 +10,27 @@ const InfiniteScrollBox = ({ images }) => {
     };
   }, []);
 
+  const [numberOfColumns, setNumberOfColumns] = useState(6);
+
   const handleResize = () => {
+    console.log("handleResize");
     if (window.innerWidth < 1500) {
-      setNumberOfColumns(6);
+      console.log("set number to 6");
+      // setNumberOfColumns(6);
+      // setColumnsState(columns);
+
+      setColumnsState((prevState) => {
+        setNumberOfColumns(6);
+        return columns;
+      });
     } else {
-      setNumberOfColumns(18);
+      console.log("set number to 18");
+      // setNumberOfColumns(18);
+      // setColumnsState(columns);
+      setColumnsState((prevState) => {
+        setNumberOfColumns(18);
+        return columns;
+      });
     }
   };
 
@@ -27,9 +42,7 @@ const InfiniteScrollBox = ({ images }) => {
     );
   });
 
-  const [numberOfColumns, setNumberOfColumns] = useState(6);
-
-  let Columns = [];
+  let columns = [];
   let counter = 0;
   let fillerArray = [];
 
@@ -43,36 +56,18 @@ const InfiniteScrollBox = ({ images }) => {
     let thingToPush = fillerArray.concat(copyImages);
     thingToPush = thingToPush.concat(copyImages);
 
-    Columns.push(thingToPush);
+    columns.push(thingToPush);
   }
-  const [columnsState, setColumnsState] = useState(Columns);
 
-  const showColumns = columnsState.map((images) => {
+  const [columnsState, setColumnsState] = useState(columns);
+
+  const showColumns = columns.map((images) => {
     return <div className="Column">{images}</div>;
   });
-
-  // works for Android but IOS stops scrolling on scrollto reset
-  const handleScrollOld = (e) => {
-    // console.log("scrollHeight: ", e.currentTarget.scrollHeight);
-    // console.log("top", e.currentTarget.scrollTop);
-    // console.log("width", e.currentTarget.scrollWidth);
-    let resetPoint = e.currentTarget.scrollHeight * 0.43;
-    if (window.innerWidth > 1500) {
-      resetPoint = e.currentTarget.scrollHeight * 0.334;
-    }
-    if (e.currentTarget.scrollTop > resetPoint) {
-      e.currentTarget.scroll({
-        top: 0,
-        left: 0,
-        behavior: "instant",
-      });
-    }
-  };
 
   let checkpoint = 0;
   const handleScroll = (e) => {
     checkpoint += 25;
-    console.log("checkpoint " + checkpoint);
     if (checkpoint > 100) {
       checkpoint = 0;
       for (let index = 0; index < columnsState.length; index++) {

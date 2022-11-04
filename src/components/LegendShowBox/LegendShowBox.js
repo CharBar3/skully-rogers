@@ -23,12 +23,14 @@ const LegendShowBox = ({
         <div className="legend-show-box-links-div">
           <div className="legends-show-box-links-etsy-div">
             <h3>Etsy</h3>
-            <button>Twitch Overlays</button>
+            <a href={etsyLink} target="_blank">
+              <button>Twitch Overlays</button>
+            </a>
           </div>
-          <div className="legends-show-box-links-red-bubble-div">
+          {/* <div className="legends-show-box-links-red-bubble-div">
             <h3>Red Bubble</h3>
             <button>Prints</button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
